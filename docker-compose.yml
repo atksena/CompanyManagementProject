@@ -1,0 +1,25 @@
+version: "3.7"
+
+services:
+  django-backend:
+    build: backend
+    command: "python manage.py runserver 0.0.0.0:8000"
+    restart: on-failure
+    volumes:
+      - ./backend:/code
+
+    
+  frontend:
+    build: frontend
+    depends_on:
+      - django-backend
+    command: "npm run serve"
+    volumes:
+      - ./frontend:/code
+      - /code/node_modules
+
+  nginx:
+    build: nginx
+    ports:
+      - "80:80"
+
