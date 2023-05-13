@@ -1,16 +1,4 @@
-TODO's:
 
-* `docker compose up` ve `docker compose down` komutlarını detaylıca araştır
-* İşletim sistemine yeni bir şey kurma.
-* Understand DRF(Django REST Framework)
-* Develop Backend Login endpoint (api/auth/login/)
-  - Use class based ViewSet or APIView instead of function-based views.
-* Create Postman collection for the BlabsInternshipProject
-* Test the endpoint with Postman
-* Develop Login.vue page on frontend
-  - Make login page an entirely different page that renders without the rest of the frontend contents.
-  - Error messages that come from the backend should be presented to the user properly.
-* Connect Login.vue form to backend endpoint
 
 Alternative:
 * Install co-pilot for PyCharm
